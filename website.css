@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 12px 'Roboto', sans-serif;
+}
+
+.contenedor,
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*--------------------------------------
+----------------HEADER----------------*/
+
+.header {
+    background: rgb(39, 39, 38);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+    padding: 40px 10px;
+}
+
+.header .logo img {
+    height: 60px;
+    width: 60px;
+    margin-left: 50px;
+    border-radius: 100%;
+}
+
+
+/*----------------------------------------
+------------- Navegación -------------------*/
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links a {
+    font: 700 13px sans-serif;
+    color: #f5f5f5;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.header .nav-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #f1d13f;
+    border-radius: 3px;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+}
+
+.header .nav-links a:hover::before {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(214, 214, 112);
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/*----------------------------------------
+------------- BANNER -------------------*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .banner {
+    width: 100%;
+    height: 100vh;
+    background: url("Imagenes/doble.jpg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .banner .bienvenida {
+    margin-bottom: 35px;
+    padding: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.main .banner .bienvenida h1 {
+    font: 50px chocolate;
+    src: url('Fonts/chocolate_5/'), format(truetype);
+}
+
+/*----------------------------------------
+------------- Nosotros -------------------*/
+
+.main .about {
+    width: 100%;
+    max-height: 80vh;
+    background-color: #df969a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .about .about-img {
+    flex: 50%;
+}
+
+.main .about .about-img img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.main .about .about-text {
+    flex: 50%;
+    display: block;
+    text-align: center;
+    color: rgb(43, 43, 43);
+    padding: 20px;
+}
+
+.main .about .about-text p {
+    font-size: 14px;
+    padding: 20px;
+    margin: 0;
+    line-height: 120%;
+}
+
+
+/*----------------------------------------
+------------- Nosotros -------------------*/
+
+.sabores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 65vh;
+    overflow: auto;
+
+}
+
+.sabores h1 {
+    margin-top: -150px;
+    padding: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+
+.sabores div {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    display: block;
+    text-align: center;
+    border-radius: 10%;
+    border: 2px solid rgb(80, 80, 80);
+}
+
+.sabores div img {
+    width: 120px;
+    height: 120px;
+    z-index: 4;
+    left: 22em;
+    margin-top: -250px;
+}
+
+.sabores ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+
+/*----------------------------------------
+-------------   Servicios  -------------------*/
+
+.servicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 65vh;
+
+}
+
+.servicios div { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 20vh;
+    margin: 10px;
+}
+
+.serv-1, .serv-2, .serv-3 {
+    background-color: #f1d13f;
+    height: auto;
+    width: auto;
+}
+
+
+/*----------------------------------------
+-------------   Footer  -------------------*/
+
+.footer {
+    color: rgb(231, 231, 231);
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.footer div {
+    margin:30px;
+}
+
+
+.dire {
+    width: 300px;
+    height: 150px;
+}
+
+.img-soc {
+    display: inline-block;
+    width: 200px;
+    
+}
+
+.img-soc img {
+    display: inline;
+    width: 30px;
+    padding: 5px;
+}
+
+.sus {
+   
+}
+
+input[type=text],
+input[type=submit] {
+     
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+input[type=submit] {
+    background-color: #f1d13f;
+    color: black;
+    border: none;width:100px;
+}
+
+
+
+/*----------------------------------------
+-------------   Responsive layout  -------------------*/
+
+/*vista celular*/
+@media (max-width: 800px) {
+
+    .main,
+    .sabores {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*vista tablet*/
+@media (min-width: 800px) and (max-width: 1280px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+}
+
+/*vista escritorio*/
+@media (min-width: 1280px) {
+    .main {
+        flex-direction: column;
+    }
+}
