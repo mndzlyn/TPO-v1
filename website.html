@@ -5,20 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="website.css">
-    <title>Document</title>
+
+    <title>Dulce Tentaci&oacuten | Helados artesanales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Fuentes importadas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="estiloboton.css">
+    <link rel="stylesheet" href="website.css">
 
 </head>
 
-
-
 <body>
+    <div class="contenedor-botonwsp">
+        <a href="https://api.whatsapp.com/send?phone=1103034560" class="btn-wsp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <div class="texto">
+            <p>¡HACÉ TU PEDIDO ONLINE!</p>
+        </div>
+    </div>
 
     <div class="contenedor">
 
@@ -27,25 +38,27 @@
             <div class="logo">
                 <img src="Imagenes/descargar.jpg">
             </div>
-
             <nav>
                 <ul class="nav-links">
                     <li><a href="#">home</a></li>
                     <li><a href="#about">about</a></li>
                     <li><a href="">servicios</a></li>
-                    <li><a href="">sabores</a></li>
-                    <li><a href=" ">contacto</a></li>
+                    <li><a href="#sabores">sabores</a></li>
+                    <li><a href="#contacto">contacto</a></li>
                 </ul>
             </nav>
-            <div class="suscripcion">
-                <button class="button">Suscripción(?)</button>
+            <div class="social">
+                <a href="tel:+1123-456-7890">
+                    <i class="fa-brands fa-whatsapp"></i>+1103-034-560
+                </a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
             </div>
         </header>
 
         <!-- BANNER -->
 
         <div class="main">
-
             <div class="banner">
                 <div class="bienvenida">
                     <h1> Date el gusto !</h1>
@@ -54,11 +67,9 @@
 
             <!-- NOSOTROS-->
             <section class="about">
-
                 <div class="about-img">
                     <img src="Imagenes/ice.jpg">
                 </div>
-
                 <div class="about-text">
                     <h1> ¿Quienes somos?</h1>
                     <h3><i>...amantes del helado!</i></h3>
@@ -70,95 +81,123 @@
 
         <!-- SABORES -->
 
-        <section class="sabores">
-
+        <section id="sabores" class="sabores">
             <h1>Nuestros sabores</h1>
-            <div>
-                <img src="Imagenes/choco.png"><br>
-                <h3 style="padding:10px;">CHOCOLATES</h3>
+            <div class="sabor">
+                <img src="Imagenes/CHOCOLATES.png" alt="Chocolates">
+                <h3>CHOCOLATES</h3>
                 <ul>
-                    <li>Chocolate blanco</li>
-                    <li>Chocolate amargo</li>
-                    <li>Chocolate suizo</li>
-                    <li>Chocolate con almendras</li>
-                    <li>???????????????????</li>
+                    <li>Chocolate Blanco</li>
+                    <li>Chocolate Amargo</li>
+                    <li>Chocolate Suizo</li>
+                    <li>Chocolate con Almendras</li>
+                    <li>Chocolate Cabsha</li>
                 </ul>
             </div>
-            <div>
-                <img src="Imagenes/choco.png"><br>
-                <h3 style="padding:10px;">CHOCOLATES</h3>
+            <div class="sabor">
+                <img src="Imagenes/CREMAS.png" alt="Cremas">
+                <h3>CREMAS</h3>
                 <ul>
-                    <li>Chocolate blanco</li>
-                    <li>Chocolate amargo</li>
-                    <li>Chocolate suizo</li>
-                    <li>Chocolate con almendras</li>
-                    <li>???????????????????</li>
+                    <li>Crema Americana</li>
+                    <li>Banan Split</li>
+                    <li>Frutilla a la Crema</li>
+                    <li>Tramontana</li>
+                    <li>Marroc</li>
                 </ul>
             </div>
-            <div>
-                <img src="Imagenes/choco.png"><br>
-                <h3 style="padding:10px;">CHOCOLATES</h3>
+            <div class="sabor">
+                <img src="Imagenes/FRUTALES.png" alt="Frutales">
+                <h3>FRUTALES</h3>
                 <ul>
-                    <li>Chocolate blanco</li>
-                    <li>Chocolate amargo</li>
-                    <li>Chocolate suizo</li>
-                    <li>Chocolate con almendras</li>
-                    <li>???????????????????</li>
+                    <li>Frutilla</li>
+                    <li>Arándanos</li>
+                    <li>Maracuyá</li>
+                    <li>Limón</li>
+                    <li>Frambuesa</li>
+                </ul>
+            </div>
+            <div class="sabor">
+                <img src="Imagenes/DULCEDELECHE.png" alt="Dulce de Leche">
+                <h3>DULCE DE LECHE</h3>
+                <ul>
+                    <li>Dulce de Leche</li>
+                    <li>Dulce de Leche con Nuez</li>
+                    <li>Dulce de Leche Tentación</li>
+                    <li>Dulce de Leche Granizado</li>
+                    <li>Dulce de Leche Havanna</li>
+                </ul>
+            </div>
+            <div class="sabor">
+                <img src="Imagenes/POSTRES.png" alt="Postres">
+                <h3>POSTRES</h3>
+                <ul>
+                    <li>Bombon Escoces</li>
+                    <li>Almendrado</li>
+                    <li>Tiramisú</li>
+                    <li>Tricolor</li>
+                    <li>Sambayón</li>
+                </ul>
+            </div>
+            <div class="sabor">
+                <img src="Imagenes/VEGANOS.png" alt="Veganos">
+                <h3>VEGANOS</h3>
+                <ul>
+                    <li>Palta</li>
+                    <li>Mango y Maracuya</li>
+                    <li>Chocolate Vegano</li>
+                    <li>Chocolate Blanco Vegano</li>
                 </ul>
             </div>
         </section>
 
-
         <!-- SERVICIOS -->
 
         <section class="servicios">
-
             <div class="serv-1">
                 <h1>Delivery</h1>
                 <p>Te lo llevamos donde quieras blablabla</p>
             </div>
             <div class="serv-2">Catering</div>
             <div class="serv-3">Vende nuestros productos</div>
-
         </section>
     </div>
 
-
-
-    <footer class="footer">
-
-        <div class="dire">
-            <h3>Encontranos en:</h3><br>
-            <p>Avenida Siempreviva 1234</p>
-        </div>
-
-        <div class="map">
+    <!-- SECCION IFRAME -->
+    <section>
+        <div class="container-iframe">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13103.265438337008!2d-58.28367233276363!3d-34.81056172540472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329643d592081%3A0x549c48ae96a6be!2sFLAMBO!5e0!3m2!1ses!2sar!4v1681334650573!5m2!1ses!2sar"
-                width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6059655040556!2d-58.48315758519515!3d-34.56578598047282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccafdc0e96f67%3A0x2ebe5cf5d19f3bc8!2sAv.%20Olaz%C3%A1bal%201043%2C%20C1430BYJ%20CABA%2C%20Argentina!5e0!3m2!1sen!2sus!4v1652594147005!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-
-        <div class="soc">
-            <h3>Nuestras redes:</h3>
-            <div class="img-soc">
-                <img src="imagenes/instagram-logo.png" alt="">
-                <img src="imagenes/wssp.png" alt="">
+    </section>
+    <footer class="footer">
+        <div id="contacto" class="dire">
+            <h3>Contacto:</h3><br>
+            <a href="#"><i class="fa fa-phone"></i> +1103-034-560</a>
+            <a href="#"><i class="fa fa-envelope"></i> heladeriadulcetentacion@email.com</a>
+            <a href="#"><i class="fa fa-map-marked"></i> Av.Olazabal 1043, C.A.B.A</a>
+        </div>
+        <div class="col">
+            <h3>Redes Sociales:</h3>
+            <div class="media">
+                <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
             </div>
-
+            <div class="media">
+                <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+            </div>
         </div>
-
-
         <div class="sus">
+            <h3>Recibí promociones y beneficios exclusivos</h3>
             <form action="/action_page.php">
-
                 <input type="text" placeholder="Correo electronico" name="mail" required>
                 <input type="submit" value="Enviar">
             </form>
         </div>
-
     </footer>
-
+    <hr>
+    <div class="copyright">
+        <p>&copy;2023 Dulce Tentación. Todos los derechos reservados.</p>
+    </div>
 </body>
 
 </html>
