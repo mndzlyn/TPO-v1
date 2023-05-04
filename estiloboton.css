@@ -1,0 +1,95 @@
+/*BOTON WHATSAPP*/
+
+.contenedor-botonwsp{
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    border: 2px solid #7f7f7f;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: background-color 0.3s ease;
+    
+}
+
+.btn-wsp{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn-wsp:hover{
+    background: #fff;
+    color: #0df053;
+    text-decoration: none;
+}
+
+.texto{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+/*********RESPONSIVE*************/
+
+@media screen and (max-width:1070px){
+    .contenedor{
+        bottom: 20px;
+        right: 20px;
+        padding: 8px;
+        border-width: 1px;
+        border-radius: 15px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    }
+    .btn-wsp{
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }
+    .texto{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .contenedor{
+        bottom: 10px;
+        right: 10px;
+        padding: 5px;
+        border-width: 1px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    .btn-wsp{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+    .texto{
+        display: none;
+    }
+}
+
+
+
+
+
+
