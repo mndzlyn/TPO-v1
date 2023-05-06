@@ -42,7 +42,7 @@
                 <ul class="nav-links">
                     <li><a href="#">home</a></li>
                     <li><a href="#about">about</a></li>
-                    <li><a href="">servicios</a></li>
+                    <li><a href="#servicios">servicios</a></li>
                     <li><a href="#sabores">sabores</a></li>
                     <li><a href="#contacto">contacto</a></li>
                 </ul>
@@ -152,7 +152,7 @@
 
         <!-- SERVICIOS -->
 
-        <section class="servicios">
+        <section id="servicios" class="servicios">
             <div class="serv-1">
                 <h1>Delivery</h1>
                 <p>Te lo llevamos donde quieras blablabla</p>
@@ -170,8 +170,45 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
+    <!-- SECCION FORM -->
+    <section>
+        <div class="container-form">
+            <div id="contacto" class="info-form">
+                <h2>Contacto</h2>
+                <p>Envianos tus consultas, reclamos o sugerencias completando el siguiente formulario.</p>
+            </div>
+            <form id="form" class="form" action="https://formspree.io/f/xqkolrgb" method="POST" d>
+                <input type="text" name="nombre" placeholder="Nombre" class="campo">
+                <input type="emal" name="email" placeholder="Email" class="campo">
+                <textarea name="mensaje" placeholder="Mensaje..."></textarea>
+                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+            <script>
+                // *** Script para el formulario -  https://formspree.io/forms/ ***
+                const $form = document.querySelector('#form')
+                $form.addEventListener('submit', handleSubmit)
+                async function handleSubmit(event) {
+                    event.preventDefault()
+                    const form = new FormData(this)
+                    const response = await fetch(this.action, {
+                        method: this.method,
+                        body: form,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    if (response.ok) {
+                        this.reset()
+                        alert('Mensaje enviado correctamente. Te estaremos respondiendo a la brevedad')
+                    }
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
     <footer class="footer">
-        <div id="contacto" class="dire">
+        <div class="dire">
             <h3>Contacto:</h3><br>
             <a href="#"><i class="fa fa-phone"></i> +1103-034-560</a>
             <a href="#"><i class="fa fa-envelope"></i> heladeriadulcetentacion@email.com</a>
