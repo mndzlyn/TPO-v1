@@ -38,13 +38,13 @@
             <div class="logo">
                 <img src="Imagenes/descargar.jpg">
             </div>
-            <nav>
+            <nav id="nav">
                 <ul class="nav-links">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#servicios">servicios</a></li>
-                    <li><a href="#sabores">sabores</a></li>
-                    <li><a href="#contacto">contacto</a></li>
+                    <li><a href="#home" onclick="seleccionar()">home</a></li>
+                    <li><a href="#about" onclick="seleccionar()">about</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()">servicios</a></li>
+                    <li><a href="#sabores" onclick="seleccionar()">sabores</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">contacto</a></li>
                 </ul>
             </nav>
             <div class="social">
@@ -53,6 +53,9 @@
                 </a>
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </header>
 
@@ -235,6 +238,7 @@
     <div class="copyright">
         <p>&copy;2023 Dulce Tentación. Todos los derechos reservados.</p>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
