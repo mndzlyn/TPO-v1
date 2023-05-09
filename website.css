@@ -165,11 +165,8 @@ main {
 
 .main .about {
     width: 100%;
-    max-height: 80vh;
-    /*background-color: #df969a;*/
-    background: #c2e59c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    max-height: 85vh;
+    background-color: #ffe5d6;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -302,6 +299,8 @@ main {
 .serv-1:hover,
 .serv-2:hover,
 .serv-3:hover {
+    filter:none;
+    cursor: pointer;
     background-color: #e0b800;
 }
 
