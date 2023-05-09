@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 * {
@@ -34,6 +35,13 @@ main {
     margin-left: 50px;
     border-radius: 100%;
 }
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
 
 .social a {
     display: inline-block;
@@ -158,7 +166,10 @@ main {
 .main .about {
     width: 100%;
     max-height: 80vh;
-    background-color: #df969a;
+    /*background-color: #df969a;*/
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -175,7 +186,9 @@ main {
 }
 
 .main .about .about-text {
+    font-family: 'Quicksand', sans-serif;
     flex: 50%;
+    font-size: 1.2em;
     display: block;
     text-align: center;
     color: rgb(43, 43, 43);
@@ -183,7 +196,8 @@ main {
 }
 
 .main .about .about-text p {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     padding: 20px;
     margin: 0;
     line-height: 120%;
@@ -272,7 +286,8 @@ main {
     align-items: center;
     width: 300px;
     height: 20vh;
-    margin: 10px;
+    margin: 5px;
+    padding: 10px;
 }
 
 .serv-1,
@@ -287,9 +302,9 @@ main {
 .serv-1:hover,
 .serv-2:hover,
 .serv-3:hover {
-    cursor: pointer;
     background-color: #e0b800;
 }
+
 
 /*----------------------------------------
 -------------   iframe -------------------*/
@@ -485,12 +500,12 @@ input[type=submit]:hover {
     }
 
     .servicios div {
-        margin: 20px 0;
-        cursor: pointer;
-        height: 60px;
-        width: 300px;
+        margin: 5px 0;
+        /* cursor: pointer; */
+        height: 70px;
+        width: 75%;
     }
-
+    
 
     .container-form {
         grid-template-columns: 1fr;
@@ -566,7 +581,7 @@ input[type=submit]:hover {
     .sabores .sabor {
         width: calc(50% - 20px);
     }
-
+    
     .container-form h2 {
         font-size: 28px;
     }
@@ -685,17 +700,11 @@ input[type=submit]:hover {
     }
 
     .servicios div {
-        margin: 20px;
-        height: auto;
-        width: auto;
+        margin: 5px 0;
+        height: 80px;
+        width: 75%;
     }
 
-    .serv-1,
-    .serv-2,
-    .serv-3 {
-        height: auto;
-        width: auto;
-    }
 
     .container-form form {
         grid-template-columns: 1fr;

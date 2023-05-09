@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Dulce Tentaci&oacuten | Helados artesanales</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -18,7 +17,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="estiloboton.css">
     <link rel="stylesheet" href="website.css">
-
 </head>
 
 <body>
@@ -30,21 +28,19 @@
             <p>¡HACÉ TU PEDIDO ONLINE!</p>
         </div>
     </div>
-
     <div class="contenedor">
-
         <!-- HEADER -->
-        <header class="header">
+        <header class="header header-fixed">
             <div class="logo">
                 <img src="Imagenes/descargar.jpg">
             </div>
             <nav id="nav">
                 <ul class="nav-links">
-                    <li><a href="#home" onclick="seleccionar()">home</a></li>
-                    <li><a href="#about" onclick="seleccionar()">about</a></li>
-                    <li><a href="#servicios" onclick="seleccionar()">servicios</a></li>
-                    <li><a href="#sabores" onclick="seleccionar()">sabores</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">contacto</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#nosotros" onclick="seleccionar()">Nosotros</a></li>
+                    <li><a href="#servicios" onclick="seleccionar()">Servicios</a></li>
+                    <li><a href="#sabores" onclick="seleccionar()">Sabores</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
             <div class="social">
@@ -58,32 +54,29 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
-
         <!-- BANNER -->
-
-        <div class="main">
+        <div class="main" id="inicio">
             <div class="banner">
                 <div class="bienvenida">
                     <h1> Date el gusto !</h1>
                 </div>
             </div>
-
             <!-- NOSOTROS-->
-            <section class="about">
+            <section id="nosotros" class="about">
                 <div class="about-img">
                     <img src="Imagenes/ice.jpg">
                 </div>
                 <div class="about-text">
                     <h1> ¿Quienes somos?</h1>
                     <h3><i>...amantes del helado!</i></h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quibusdam suscipit, dolores
-                        ea fugiat quaerat dignissimos minima explicabo tempora tenetur modi saepe nam quam velit
-                        quisquam vitae exercitationem consequuntur laborum?</p>
+                    <p> Somos una empresa dedicada a la fabricación y comercialización de cremas heladas artesanales,
+                        tratando de satisfacer las necesidades de un mercado cada vez más exigente.
+                        Nuestra misión se basa en la innovación y la excelencia de cada uno de nuestros productos para
+                        poder así satisfacer el paladar mas exigente de cada cliente, proporcionándoles también momentos
+                        amables, alegres y de sano esparcimiento. </p>
                 </div>
         </div>
-
-        <!-- SABORES -->
-
+        <!-- SECCION SABORES -->
         <section id="sabores" class="sabores">
             <h1>Nuestros sabores</h1>
             <div class="sabor">
@@ -152,16 +145,22 @@
                 </ul>
             </div>
         </section>
+    <!-- SECCION CARROUSEL -->
 
-        <!-- SERVICIOS -->
+    
 
+        <!-- SECCION SERVICIOS -->
         <section id="servicios" class="servicios">
             <div class="serv-1">
                 <h1>Delivery</h1>
-                <p>Te lo llevamos donde quieras blablabla</p>
+                <p>Buscá la sucursal mas cercana y te lo llevamos!! Podes hacer tu pedido online.</p>
             </div>
-            <div class="serv-2">Catering</div>
-            <div class="serv-3">Vende nuestros productos</div>
+            <div class="serv-2">????? </div>
+            <div class="serv-3">
+                <h1>Abrí tu local</h1>
+                <p>Escribinos a: locales@dulcetentacion.com.ar y formá parte de nuestra familia
+                </p>
+            </div>
         </section>
     </div>
 
@@ -173,6 +172,7 @@
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
+
     <!-- SECCION FORM -->
     <section>
         <div class="container-form">
@@ -228,7 +228,7 @@
         </div>
         <div class="sus">
             <h3>Recibí promociones y beneficios exclusivos</h3>
-            <form action="/action_page.php">
+            <form action="sus.php" method="post">
                 <input type="text" placeholder="Correo electronico" name="mail" required>
                 <input type="submit" value="Enviar">
             </form>
@@ -239,6 +239,6 @@
         <p>&copy;2023 Dulce Tentación. Todos los derechos reservados.</p>
     </div>
     <script src="script.js"></script>
+    <script src="header-fixed.js"></script>
 </body>
-
 </html>
