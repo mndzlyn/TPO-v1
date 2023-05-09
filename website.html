@@ -34,14 +34,14 @@
     <div class="contenedor">
 
         <!-- HEADER -->
-        <header class="header">
+        <header class="header header-fixed">
             <div class="logo">
                 <img src="Imagenes/descargar.jpg">
             </div>
             <nav id="nav">
                 <ul class="nav-links">
-                    <li><a href="#home" onclick="seleccionar()">home</a></li>
-                    <li><a href="#about" onclick="seleccionar()">Nosotros</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#nosotros" onclick="seleccionar()">Nosotros</a></li>
                     <li><a href="#servicios" onclick="seleccionar()">Servicios</a></li>
                     <li><a href="#sabores" onclick="seleccionar()">Sabores</a></li>
                     <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
@@ -60,8 +60,7 @@
         </header>
 
         <!-- BANNER -->
-
-        <div class="main">
+        <div class="main" id="inicio">
             <div class="banner">
                 <div class="bienvenida">
                     <h1> Date el gusto !</h1>
@@ -69,7 +68,7 @@
             </div>
 
             <!-- NOSOTROS-->
-            <section class="about">
+            <section id="nosotros" class="about">
                 <div class="about-img">
                     <img src="Imagenes/ice.jpg">
                 </div>
@@ -85,9 +84,7 @@
                 </div>
 
         </div>
-
-        <!-- SABORES -->
-
+        <!-- SECCION SABORES -->
         <section id="sabores" class="sabores">
             <h1>Nuestros sabores</h1>
             <div class="sabor">
@@ -156,9 +153,11 @@
                 </ul>
             </div>
         </section>
+        <!-- SECCION CARROUSEL -->
 
-        <!-- SERVICIOS -->
 
+
+        <!-- SECCION SERVICIOS -->
         <section id="servicios" class="servicios">
             <div class="serv-1">
                 <h1>Delivery</h1>
@@ -239,7 +238,7 @@
         </div>
         <div class="sus">
             <h3>Recibí promociones y beneficios exclusivos</h3>
-            <form action="/action_page.php">
+            <form action="sus.php" method="post">
                 <input type="text" placeholder="Correo electronico" name="mail" required>
                 <input type="submit" value="Enviar">
             </form>
@@ -250,6 +249,7 @@
         <p>&copy;2023 Dulce Tentación. Todos los derechos reservados.</p>
     </div>
     <script src="script.js"></script>
+    <script src="header-fixed.js"></script>
 </body>
 
 </html>
