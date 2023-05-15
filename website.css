@@ -66,6 +66,7 @@ main {
     ;
 }
 
+
 /*----------------------------------------
 ------------- Navegación -------------------*/
 
@@ -154,9 +155,12 @@ main {
     width: 100%;
     display: block;
     text-align: center;
+ 
 }
 
 .main .banner .bienvenida h1 {
+    color: rgb(250, 250, 250);
+    margin-bottom:-25px;
     font: 50px chocolate;
     src: url('Fonts/chocolate_5/'), format(truetype);
 }
@@ -167,17 +171,22 @@ main {
 .main .about {
     width: 100%;
     max-height: 80vh;
-    background: #c2e59c;
+    background: #eeeeeb;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+    background: -webkit-linear-gradient(to right, #ffffff, #5bc0de);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #64b3f4, #c2e59c);
+    background: linear-gradient(to right, #ffffff, #5bc0de);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
+
+ 
+
+
 
 .main .about .about-img {
     flex: 50%;
@@ -193,29 +202,32 @@ main {
     font-size: 1.2em;
     display: block;
     text-align: center;
-    color: rgb(43, 43, 43);
+    color: rgb(50, 51, 51);
     padding: 20px;
 }
 
 .main .about .about-text p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     padding: 20px;
     margin: 0;
     line-height: 120%;
+    color: #414141;
 }
 
 .mas {
     padding: 5px 10px;
     font-size: 14px;
-    color: inherit;
+    color: #272727;
     text-decoration: none;
-    border: solid 1px rgb(146, 146, 146);
+    background-color: #5fadc5;
+    border-radius: 8%;
+    border: 1px solid #75b4c7;
 }
 
 .mas:hover {
-    background-color: #252525;
-    color: #f5f5f5;
+    background-color: #1b1b1b;
+    color: #f3f3f3;
 }
 
 /*----------------------------------------
@@ -228,6 +240,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-bottom:50px;
     background-color: #f1f1f1;
     /*height: calc(100vh - 200px);*/
 }
@@ -248,19 +261,23 @@ main {
     margin: 10px;
     /*background-color: #fdfdfd;*/
     background: #EFEFBB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #D4D3DD, #EFEFBB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #D4D3DD, #bbe9ef);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D4D3DD, #bbe0ef); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    border: 2px solid #b4b4b4;
+    border: 2px solid #cecece;
     transition: 0.5s;
     object-fit: cover;
     overflow: hidden;
 }
+
+
+/* background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);    Chrome 10-25, Safari 5.1-6  
+background: linear-gradient(to right, #D4D3DD, #EFEFBB) */
 
 .sabor:hover {
     transform: scale(1.1);
@@ -302,8 +319,10 @@ main {
     align-items: center;
     align-content: center;
     height: auto;
-    margin-top: 20px;
-    background-color: #f3e9ce;
+    margin:0px;
+    padding: 80px 20px;
+
+    background-color: #e0e9ec;
 }
 
 .servicios div {
@@ -314,7 +333,7 @@ main {
     width: 300px;
     height: 20vh;
     margin: 5px;
-    padding: 10px;
+    padding: 10px; 
 }
 
 
@@ -325,6 +344,7 @@ main {
     height: auto;
     width: auto;
     border-radius: 5%;
+    color: #2e2e2e;
 }
 
 .serv-1:hover,
@@ -352,7 +372,7 @@ main {
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin: 20px 0;
+    margin:0px;
 }
 
 .map-container h2 {
