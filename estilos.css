@@ -30,8 +30,8 @@ main {
 }
 
 .header .logo img {
-    height: 65px;
-    width: 65px;
+    height: 90px;
+    width: 90px;
     margin-left: 50px;
     
 }
@@ -350,10 +350,20 @@ background: linear-gradient(to right, #D4D3DD, #EFEFBB) */
 .serv-1:hover,
 .serv-2:hover,
 .serv-3:hover {
-    /* filter: none;
-    cursor: pointer; */
     background-color: #327da0;
 }
+.servicios div i {
+  margin-bottom: 7px;
+}
+
+.servicios h1 {
+    display: block;
+    text-align: center; 
+  }
+  .servicios h1 i {
+    display: block;
+    text-align: center;
+  }
 
 /*----------------------------------------
 -------------   iframe -------------------*/
@@ -584,7 +594,9 @@ input[type=submit]:hover {
     }
 
     .header .logo img {
-        margin-left: 0;
+        margin-left: 25px;
+        height: 90px;
+        width: 90px;
     }
 
     .main .about {
@@ -607,11 +619,9 @@ input[type=submit]:hover {
 
     .servicios div {
         margin: 5px 0;
-        /* cursor: pointer; */
-        height: 70px;
-        width: 75%;
+        height: 90px;
+        /* width: 75%; */
     }
-
 
     .container-form {
         grid-template-columns: 1fr;
@@ -740,9 +750,9 @@ input[type=submit]:hover {
 /* Breakpoint 3: Extra small devices */
 @media screen and (max-width: 480px) {
     .header .logo img {
-        height: 40px;
-        width: 40px;
-        margin-left: 20px;
+        margin-left: 25px;
+        height: 70px;
+        width: 70px;
     }
 
     .header .nav-links li {
@@ -784,12 +794,8 @@ input[type=submit]:hover {
     }
 
     .nav-responsive {
-        position: absolute;
-        top: 10px;
-        right: 20px;
         font-size: 25px;
-        color: #fff;
-        z-index: 10;
+        color: #3B3F4A;
     }
 
     .nav-responsive:hover~.nav-links {
@@ -819,8 +825,7 @@ input[type=submit]:hover {
 
     .servicios div {
         margin: 5px 0;
-        height: 80px;
-        width: 75%;
+        height: 90px;
     }
 
 
