@@ -14,8 +14,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap"
         rel="stylesheet">
+    <!-- Estilos para slick -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- slick.js -->
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <link rel="stylesheet" href="estiloboton.css">
-    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="Imagenes/logoico.ico">
 </head>
 
 <body>
@@ -32,7 +42,7 @@
         <!-- HEADER -->
         <header class="header header-fixed">
             <div class="logo">
-                <img src="Imagenes/logo04.png">
+                <img src="Imagenes/logo.png">
             </div>
             <nav id="nav">
                 <ul class="nav-links">
@@ -60,9 +70,10 @@
             <div class="banner">
                 <div class="bienvenida">
                     <h1> Date el gusto !</h1>
-                 
+
                 </div>
             </div>
+
 
             <!-- NOSOTROS-->
             <section id="nosotros" class="about">
@@ -149,21 +160,21 @@
             </div>
         </section>
         <!-- SECCION CARROUSEL -->
-        
+
 
 
         <!-- SECCION SERVICIOS -->
         <section id="servicios" class="servicios">
             <div class="serv-1">
-                <h1>Delivery</h1>
+                <h1><i class="fa fa-truck"></i>Delivery</h1>
                 <p>¡Te lo llevamos donde quieras!</p>
             </div>
             <div class="serv-2">
-                <h1>Eventos</h1>
+                <h1><i class="fa fa-glass-martini"></i>Eventos</h1>
                 <p>Catering & más...</p>
             </div>
             <div class="serv-3">
-                <h1>Venta</h1>
+                <h1><i class="fas fa-store-alt"></i>Franquicias</h1>
                 <p>Vendé nuestros productos</p>
             </div>
         </section>
@@ -238,7 +249,7 @@
                 }())
 
                 // *** Script para el formulario -  https://formspree.io/forms/ ***
-                
+
                 const $form = document.querySelector('#form')
                 $form.addEventListener('submit', handleSubmit)
                 async function handleSubmit(event) {
