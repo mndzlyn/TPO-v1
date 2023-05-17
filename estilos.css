@@ -32,7 +32,7 @@ main {
     height: 90px;
     width: 90px;
     margin-left: 50px;
-    
+
 }
 
 .header-fixed {
@@ -60,7 +60,7 @@ main {
 .nav-responsive {
     display: none;
     font-size: 25px;
-    color: #3B3F4A; 
+    color: #3B3F4A;
 }
 
 
@@ -131,16 +131,16 @@ main {
     transform-origin: bottom left;
   }*/
 
-  .header .nav-links {
+.header .nav-links {
     list-style: none;
-  }
-  
-  .header .nav-links li {
+}
+
+.header .nav-links li {
     display: inline-block;
     padding: 0 20px;
-  }
-  
-  .header .nav-links a {
+}
+
+.header .nav-links a {
     font-family: sans-serif;
     font-size: 1.1rem;
     color: #3B3F4A;
@@ -150,16 +150,16 @@ main {
     padding: 5px 0;
     border-bottom: 2px solid transparent;
     transition: border-color 0.2s ease-in-out;
-  }
-  
-  .header .nav-links a:hover {
+}
+
+.header .nav-links a:hover {
     border-bottom-color: #5bc0de;
     color: #5bc0de;
-    background-color: #f8f8f8;
-  }
-  
-  .header .nav-links a::before,
-  .header .nav-links a::after {
+
+}
+
+.header .nav-links a::before,
+.header .nav-links a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -170,22 +170,22 @@ main {
     left: 0;
     transform-origin: center;
     transform: scaleX(0);
-  }
-  
-  .header .nav-links a::before {
+}
+
+.header .nav-links a::before {
     transition: transform .4s ease-in-out;
-  }
-  
-  .header .nav-links a::after {
+}
+
+.header .nav-links a::after {
     transform-origin: bottom right;
     transition: transform 0.2s ease-in-out;
-  }
-  
-  .header .nav-links a:hover::before,
-  .header .nav-links a:hover::after {
+}
+
+.header .nav-links a:hover::before,
+.header .nav-links a:hover::after {
     transform-origin: center;
     transform: scaleX(1);
-  }
+}
 
 
 
@@ -233,12 +233,12 @@ main {
     width: 100%;
     display: block;
     text-align: center;
- 
+
 }
 
 .main .banner .bienvenida h1 {
     color: rgb(250, 250, 250);
-    margin-bottom:-25px;
+    margin-bottom: -25px;
     font: 50px chocolate;
     src: url('Fonts/chocolate_5/'), format(truetype);
 }
@@ -246,14 +246,14 @@ main {
 /*----------------------------------------
 ------------- Nosotros -------------------*/
 
-.main .about {
+.about {
     width: 100%;
-    max-height: 80vh;
+    max-height: 50vh;
     background: #eeeeeb;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffffff, #5bc0de);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffffff, #5bc0de);
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 46%, #1c92d2ef 100%);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     flex-direction: row;
@@ -261,21 +261,19 @@ main {
     align-items: center;
 }
 
-
- 
-
-
-
-.main .about .about-img {
+.about-img {
     flex: 50%;
-}
-
-.main .about .about-img img {
     width: 100%;
-    max-height: 100%;
+    height: 50vh;
+    background-image: url('Imagenes/pexels-nick-mayer-7761791.jpg');
+    background-size: cover;
 }
 
-.main .about .about-text {
+.about-img img {
+    width: 50%;
+}
+
+.about .about-text {
     flex: 50%;
     font-size: 1.2em;
     display: block;
@@ -284,7 +282,7 @@ main {
     padding: 20px;
 }
 
-.main .about .about-text p {
+.about .about-text p {
     font-size: 16px;
     font-weight: 400;
     padding: 20px;
@@ -318,9 +316,9 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom:50px;
+    padding-bottom: 50px;
     background-color: #f1f1f1;
-    
+
 }
 
 /* .sabores h1 {
@@ -333,7 +331,7 @@ main {
     text-transform: uppercase;
 }  */
 .sabores h1 {
-    margin-top: 30px;
+    margin: 50px 25px;
     padding: 50px 0;
     width: 80%;
     text-align: center;
@@ -343,7 +341,7 @@ main {
     font-size: 2rem;
     font-family: 'Arial Rounded MT Bold', sans-serif;
     /* background: linear-gradient(to right, #FCE38A, #F38181); */
-    background: linear-gradient(to right,#1c92d2, #f2fcfe);
+    background: linear-gradient(to right, #1c92d2, #f2fcfe);
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
@@ -359,9 +357,12 @@ main {
     width: calc(30% - 20px);
     height: 320px;
     margin: 10px;
-    background: #EFEFBB;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #D4D3DD, #bbe9ef);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #D4D3DD, #bbe0ef); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #EFEFBB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D4D3DD, #bbe9ef);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D4D3DD, #bbe0ef);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -418,7 +419,7 @@ background: linear-gradient(to right, #D4D3DD, #EFEFBB) */
     align-items: center;
     align-content: center;
     height: auto;
-    margin:0px;
+    margin: 0px;
     padding: 80px 20px;
 
     background-color: #e0e9ec;
@@ -431,38 +432,59 @@ background: linear-gradient(to right, #D4D3DD, #EFEFBB) */
     align-items: center;
     width: 300px;
     height: 20vh;
-    margin: 5px;
-    padding: 10px; 
+    margin: 25px;
+    padding: 10px;
 }
-
 
 .serv-1,
 .serv-2,
 .serv-3 {
-    background-color: #5bc0de;
+    background-color: #9db2bb;
     height: auto;
     width: auto;
     border-radius: 5%;
-    color: #2e2e2e;
+    color: #f5f5f5;
 }
+
+.serv-1 {
+    background-image: url('Imagenes/truck.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.serv-2 {
+    background-image: url('Imagenes/eventos.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.serv-3 {
+    background-image: url('Imagenes/helados2.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
 
 .serv-1:hover,
 .serv-2:hover,
 .serv-3:hover {
-    background-color: #327da0;
+    background-color: #cde6f1;
 }
+
+
 .servicios div i {
-  margin-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 .servicios h1 {
     display: block;
-    text-align: center; 
-  }
-  .servicios h1 i {
+    text-align: center;
+}
+
+.servicios h1 i {
     display: block;
     text-align: center;
-  }
+}
 
 /*----------------------------------------
 -------------   iframe -------------------*/
@@ -481,7 +503,7 @@ background: linear-gradient(to right, #D4D3DD, #EFEFBB) */
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     text-align: center;
-    margin:0px;
+    margin: 0px;
 }
 
 .map-container h2 {
@@ -549,8 +571,10 @@ textarea {
     min-height: 140px;
     max-height: 150px;
 }
-.container-form form .campo:focus, textarea:focus {
-  border-color: #5bc0de;
+
+.container-form form .campo:focus,
+textarea:focus {
+    border-color: #5bc0de;
 }
 
 .container-form .btn-enviar {
@@ -563,10 +587,11 @@ textarea {
     border-radius: 50px;
     cursor: pointer;
     transition-duration: 0.4s;
-  }
-  .container-form .btn-enviar:hover {
+}
+
+.container-form .btn-enviar:hover {
     background-color: #327da0;
-  }
+}
 
 /*----------------------------------------
 -------------   Footer -------------------*/
@@ -671,7 +696,7 @@ input[type=submit]:hover {
     .header .nav-links a {
         margin: 0.2rem 0;
         font-size: 0.9rem;
-        
+
     }
 
     .header .logo img {
@@ -746,10 +771,11 @@ input[type=submit]:hover {
     .header {
         padding: 20px;
     }
-    .header .nav-links a{
+
+    .header .nav-links a {
         color: #f5f5f5;
     }
-    
+
 
     header nav.responsive {
         display: block;
