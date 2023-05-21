@@ -209,39 +209,85 @@ main {
 }
 
 /*----------------------------------------
-------------- BANNER -------------------*/
+------------- Título -------------------*/
 
 .main {
     display: flex;
     flex-direction: column;
 }
 
-.main .banner {
-    width: 100%;
-    height: 100vh;
-    background: url("Imagenes/doble.jpg") no-repeat center;
-    background-size: cover;
+
+.main .slider-frame .bienvenida {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.main .banner .bienvenida {
-    margin-bottom: 35px;
+    align-items: center; 
+    text-align: center;
+    position: absolute;
+    bottom:50%;
     padding: 0;
     width: 100%;
-    display: block;
-    text-align: center;
-
 }
 
-.main .banner .bienvenida h1 {
+.main .slider-frame .bienvenida h1 {
     color: rgb(250, 250, 250);
     margin-bottom: -25px;
-    font: 50px chocolate;
+    font: 70px "roboto";
+    font-weight: 700;
+    padding: 20px;
+    text-transform: uppercase;text-shadow: 4px 4px 2px #545c649c;}
+
+.main .slider-frame .bienvenida h3 {
+    color: rgb(250, 250, 250);
+    font: 25px chocolate;
     src: url('Fonts/chocolate_5/'), format(truetype);
 }
+
+
+/*----------- Carrousel -----------------*/
+
+.slider-frame {
+    width: 100%;
+    height:fit-content;
+    overflow: hidden;
+}
+
+.slider-frame .img {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+
+    animation: pasaje 16s infinite alternate ease-in-out;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0; 
+    width: 400%;
+    height: auto;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+    max-height: fit-content;
+}
+
+
+@keyframes pasaje {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
 
 /*----------------------------------------
 ------------- Nosotros -------------------*/
