@@ -790,8 +790,16 @@ input[type=submit]:hover {
         padding: 10px 0;
     }
 
-    .main .banner .bienvenida h1 {
-        font-size: 30px;
+    .main .slider-frame .bienvenida {
+        bottom: 65%;
+    }
+
+    .main .slider-frame .bienvenida h1 {
+        font-size: 28px;
+    }
+
+    .about .about-text {
+        overflow: scroll;
     }
 
     .sabores .sabor {
@@ -898,17 +906,18 @@ input[type=submit]:hover {
         display: block;
     }
 
-    .main .banner .bienvenida h1 {
-        font-size: 28px;
+    .main .slider-frame .bienvenida {
+        visibility: hidden;
     }
 
-    .main .about .about-img,
-    .main .about .about-text {
-        flex: 100%;
+    .about {
+        display: flex;
+        flex-direction: column;
     }
 
     .main .about .about-text p {
-        padding: 10px;
+        padding: 5px;
+
     }
 
     .sabores .sabor {
