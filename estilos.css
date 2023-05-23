@@ -124,9 +124,6 @@ main {
     transform: scaleX(1);
 }
 
-
-
-
 .button {
     display: inline-block;
     padding: 15px 25px;
@@ -152,7 +149,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
 
 .main .slider-frame .bienvenida {
     display: flex;
@@ -294,21 +290,6 @@ main {
     margin: 0;
     line-height: 120%;
     color: #414141;
-}
-
-.mas {
-    padding: 5px 10px;
-    font-size: 14px;
-    color: #272727;
-    text-decoration: none;
-    background-color: #5fadc5;
-    border-radius: 8%;
-    border: 1px solid #75b4c7;
-}
-
-.mas:hover {
-    background-color: #1b1b1b;
-    color: #f3f3f3;
 }
 
 /*----------------------------------------
